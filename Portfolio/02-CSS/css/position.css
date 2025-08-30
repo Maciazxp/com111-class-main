@@ -1,3 +1,35 @@
-body {
-    margin: 0;
-}
+
+        
+        .container {
+          display: flex;
+            position: relative;
+            width: 300px;
+            height: 300px;
+        }
+        
+        .Top {
+          width: 100px;
+          height: 70px;
+          background-color: #e30505;
+          margin-top: 140px;
+          margin-left: 200px;
+          position: absolute;
+        }
+        
+        .Mid {
+            width: 100px;
+            height: 70px;
+            background-color: #1648fc;
+            margin-top: 70px;
+            margin-left: 100px;
+            position: absolute;
+        }
+
+        .Bot {
+            width: 100px;
+            height: 70px;
+            background-color: #ffea05;
+            margin-top: 0px;
+            margin-left: 0px;
+            position: absolute;
+        }

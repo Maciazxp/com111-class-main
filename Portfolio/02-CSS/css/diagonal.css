@@ -1,3 +1,35 @@
 body {
     margin: 0;
 }
+
+div{
+    width: 200px;
+    height: 200px;
+
+
+}
+
+.Top-container {
+    background-color: blue;
+    border: 10px solid black;
+    padding: 20px;
+    position: absolute;
+    left: 20px;
+    
+}
+
+.Middle-container {
+    background-color: red;
+    border: 20px solid black;
+    position: absolute;
+    top: 335px;
+    left: 277px;
+}
+
+.Bottom-container {
+    background-color: yellow;
+    border: 10px solid black;
+    position: absolute;
+    top: 570px;
+    left: 515px;
+}
