@@ -1,3 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap');
+
+
 body {
-  margin: 0;
+  text-align: center;
+  background: linear-gradient(to top, rgb(74, 235, 141),rgb(95, 226, 204) );
+
+}
+
+table, td, th, p, ul, ol, h1, h2, h3, h4,hr, section, form {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+h1{
+  font-family: 'Sacramento', cursive;
+    margin: 50px;
+  font-size: 5.5rem;
+  color: rgb(47, 220, 111);
+}
+
+h2{
+ font-family: 'Montserrat', sans-serif;    margin: 20px;
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+  margin: 20px;
+  color: rgb(41, 152, 134);
+}
+
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(78, 211, 87);
+}
+
+
+hr {
+  border-top: 6px dotted #EAF6F6;
+  border-bottom: none;
+  width: 4%;
+  margin-left: 100px;
+  margin-right: 100px;
 }
