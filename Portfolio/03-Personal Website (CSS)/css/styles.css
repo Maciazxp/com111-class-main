@@ -8,7 +8,7 @@ body {
 
 }
 
-table, td, th, p, ul, ol, h1, h2, h3, h4,hr, section, form {
+table, td, th, p, ul, ol, h1, h2, h3, h4, hr, section, form {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -19,6 +19,13 @@ h1{
     margin: 50px;
   font-size: 5.5rem;
   color: rgb(47, 220, 111);
+}
+
+.meet-the-artists {
+  font-family: 'Sacramento', cursive;
+  margin: 50px;
+  font-size: 5.5rem;
+  color: rgb(0, 0, 0);
 }
 
 h2{
@@ -32,7 +39,7 @@ h2{
 
 h3{
   font-family: 'Montserrat', sans-serif;
-  color: rgb(78, 211, 87);
+  color: rgb(100, 245, 110);
 }
 
 
@@ -62,4 +69,199 @@ object-fit: cover;
   width: 100px;
   height: 100px;
   border-radius: 50px;
+}
+
+
+.intro-section {
+  padding: 20px;
+  background: radial-gradient(circle, #26d4ba, #5fe5ad);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.quote-section {
+  padding: 20px;
+  background: linear-gradient(to right, rgba(99, 217, 119, 0.8), #1ab1ac);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+
+}
+
+.background-section {
+  padding: 40px;
+  background: linear-gradient(to right,#1ab1ac , rgba(99, 217, 119, 0.8));
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.education-section {
+  padding: 20px;
+  background: linear-gradient(to top,#4cde9c , rgba(70, 169, 163, 0.8));
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+
+.skills-section {
+  padding: 40px;
+  background: radial-gradient(circle, #5fe5ad, #1ab1ac);
+  border-radius: 200px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-left: 450px;
+  margin-right: 450px;
+}
+
+.food-section {
+  padding: 20px;
+  background: linear-gradient(to right, #ffffff, #ffffff);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-left: 400px;
+  margin-right: 400px;
+}
+
+
+.hobbies-section {
+  padding: 20px;
+  background: linear-gradient(to right, #1ab1ac, #1ab1ac);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.spots-section {
+  padding: 40px;
+  background: linear-gradient(to right, #f8f88c, #ffec6f);
+  border-radius: 100px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.musicians-section {
+  padding: 40px;
+  background: radial-gradient(circle, #26d4ba, #5fe5ad);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  }
+
+  .agenda-section {
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+/*code provide by teacher :V*/
+  /* Three columns side by side */
+.column {
+  float: left;
+  width: 30%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  margin-left: 25px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.agenda-section form {
+  border: 3px dotted #1ab1ac;
+  background: linear-gradient(to right, #e0fff7, #b2f7ef);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 30px auto;
+  width: 40%;
+  box-sizing: border-box;
+}
+
+input{
+  border-radius: 5px;
+  background-color: #98fbc1;
+}
+
+.clouds {
+  position: sticky;
+  top: 50px;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 10px;
+}
+
+.cloud {
+  width: 150px;
+  height: auto;
+}
+
+.mountain-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: static;
+  margin-top: 40px;
+}
+
+.mountain {
+  width: 600px;
+  height: auto;
 }
