@@ -13,9 +13,14 @@ function drawFace(ctx, radius) {
 
   // Draw the edge circle with gradient
   // TODO: (Optional) add a gradient circle
+  
 
   // Center circle
   // TODO: make the central black circle
+  ctx.beginPath();
+  ctx.arc(0, 0, radius * 0.1, 0, 2 * Math.PI);
+  ctx.fillStyle = "black";
+  ctx.fill();
 }
 
 function drawNumbers(ctx, radius) {
@@ -26,6 +31,8 @@ function drawNumbers(ctx, radius) {
   ctx.textBaseline = "middle";
   ctx.fillStyle = "#333";
   ctx.textAlign = "center";
+
+  for (num = 1; num < 13; num++){
   ang = (num * Math.PI) / 6;
   ctx.rotate(ang);
   ctx.translate(0, -radius * 0.85);
@@ -34,6 +41,7 @@ function drawNumbers(ctx, radius) {
   ctx.rotate(ang);
   ctx.translate(0, radius * 0.85);
   ctx.rotate(-ang);
+  }
 }
 
 function drawTime(ctx, radius) {
@@ -43,13 +51,16 @@ function drawTime(ctx, radius) {
   var minute = now.getMinutes();
   var second = now.getSeconds();
   //hour
-  hour = hour % 12;
+  var hour = (hour % 12) * Math.PI / 6; + (minute * Math.PI / (6 * 60)) + (second * Math.PI / (360 * 60));
   drawHand(ctx, hour, radius * 0.5, radius * 0.07);
   //minute
+  var minute = (minute * Math.PI / 30) + (second * Math.PI / (30 * 60));
   drawHand(ctx, minute, radius * 0.8, radius * 0.07);
   // second
+  var second = second * Math.PI / 30;
   drawHand(ctx, second, radius * 0.9, radius * 0.02);
 }
+
 
 function drawHand(ctx, pos, length, width) {
   ctx.beginPath();
