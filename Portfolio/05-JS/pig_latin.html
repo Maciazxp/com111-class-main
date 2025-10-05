@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head runat="server">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,13 +16,12 @@
         suffix or by moving the onset or initial consonant or consonant cluster of a word to the end of the word and
         adding a vocalic syllable to create such a suffix</p>
     <div>
-        <input type="text" id="txtVal" />
-        <button id="btn" onclick="igpayAtinlay">
-            Click To Get The Pig Latin Translationr</button>
+        <input type="text" id="word" />
+        <button id="btn" onclick="translateToPigLatin()">
+            Click To Get The Pig Latin Translation</button>
         <br />
-        <span id="pigLatLbl"></span>
+        <span id="answer"></span>
     </div>
-
 </body>
 
 </html>
