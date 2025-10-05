@@ -19,6 +19,11 @@
                 for (var i = number + 1; i < maxNum; i++) {
                     //TODO: check if the current number is a prime or not
                     // If it is, then return it
+                    if (isPrime(i)){
+                        window.alert("The Next Prime Number is: " + i);
+                        break
+
+                    }
                     continue;
                 }
             } else {
@@ -28,7 +33,7 @@
         }
         function isPrime(num) {
             for (var i = 2; i < num; i++) {
-                if (num % i === 0) {
+                if (num % i === 0) { //si el modulo da 0, signfica que no es primo porque fue divisible por un numero entre 2 y num-1
                     return false;
                 }
             }
