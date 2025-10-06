@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../03-Personal Website (CSS)/css/styles.css">
+  <title>Santiago Macias Fernandez - HTML</title>
+</head>
+<body>
+
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: rgb(67, 210, 127);">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"> Santiago Macias Fernandez</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="destination.html">Destinations</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Jump to Section
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#intro">Intro</a></li>
+            <li><a class="dropdown-item" href="#quote">Quote</a></li>
+            <li><a class="dropdown-item" href="#background">Background</a></li>
+            <li><a class="dropdown-item" href="#education">Education</a></li>
+            <li><a class="dropdown-item" href="#skills">Skills</a></li>
+            <li><a class="dropdown-item" href="#food">Food</a></li>
+            <li><a class="dropdown-item" href="#hobbies">Hobbies</a></li>
+            <li><a class="dropdown-item" href="#spots">Spots</a></li>
+            <li><a class="dropdown-item" href="#musicians">Musicians</a></li>
+            <li><a class="dropdown-item" href="#agenda">Agenda</a></li>
+          </ul>
+        </li>
+        <!-- Contact con floating labels -->
+        <li class="nav-item">
+          <button class="btn btn-outline-light ms-2" data-bs-toggle="modal" data-bs-target="#contactModal">
+            Contact
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div class="container-fluid">
+
+
+
+  <!-- Header Section -->
+    <div class="header-section py-4">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-8">
+          <h1 class="text-center"><b>Santiago Macias Fernandez</b></h1>
+        </div>
+        <div class="col-md-2 text-center">
+          <img src="images/me2.png" alt="yo" class="img-fluid" width="150">
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    
+
+    <!-- Clouds -->
+    <div class="clouds">
+      <div class="clouds d-flex justify-content-between position-sticky">
+        <img src="images/cloud.png" class="cloud" alt="Cloud 1">
+        <img src="images/cloud.png" class="cloud" alt="Cloud 2">
+      </div>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="text-center my-4">
+      <h4>HOME PAGE</h4>
+      <div class="d-flex flex-wrap justify-content-center gap-2">
+        <a href="index.html" class="btn btn-outline-success btn-sm">Go to Home Page</a>
+        <a href="#intro" class="btn btn-outline-success btn-sm">Go to Intro Section</a>
+        <a href="#quote" class="btn btn-outline-success btn-sm">Go to Quote Section</a>
+        <a href="#background" class="btn btn-outline-success btn-sm">Go to Background Section</a>
+        <a href="#education" class="btn btn-outline-success btn-sm">Go to Education Section</a>
+        <a href="#skills" class="btn btn-outline-success btn-sm">Go to Skills Section</a>
+        <a href="#food" class="btn btn-outline-success btn-sm">Go to Food Section</a>
+        <a href="#hobbies" class="btn btn-outline-success btn-sm">Go to Hobbies Section</a>
+        <a href="#spots" class="btn btn-outline-success btn-sm">Go to Spots Section</a>
+        <a href="#musicians" class="btn btn-outline-success btn-sm">Go to Musicians Section</a>
+        <a href="#agenda" class="btn btn-outline-success btn-sm">Go to Agenda Section</a>
+      </div>
+    </div>
+
+    <!-- Intro Section -->
+    <div class="intro-section my-4" id="intro">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <p>Hi, I'm Santiago Macias Fernandez, I'm studying systems engineering and Digital animation.</p>
+          <p>I live in Guadalajara, Jalisco.</p>
+          <p>I'm passionate about technology and love to learn new things, I also like to be known as <b>"Macias"</b>.</p>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Quote Section -->
+    <div class="quote-section my-4" id="quote">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <p><b>Favorite quote:</b> "I have no special talent, I am only passionately curious." <br/> -- Albert Einstein</p>
+        </div>
+      </div>
+    </div>
+    
+    <hr>
+
+    <!-- Background Section -->
+    <div class="background-section my-4" id="background">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h2>Background</h2>
+          <p>I was born in Torreon, Coahuila, Mexico. But I lived in Guadalajara since I was 3 years old. <br> My main goal as a professional is to earn money and work as a game developer.</p>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Education Section -->
+<div class="education-section" id="education">
+  <h3>Education</h3>
+  
+  <div class="accordion" id="educationAccordion">
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+          <b>Tzitlacalli Ermita</b>
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#educationAccordion">
+        <div class="accordion-body">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <p>kindergarten from 2008 - 2012</p>
+              <a href="https://www.tzitlacalli.edu.mx/" class="btn btn-outline-success btn-sm">Visitar sitio web</a>
+            </div>
+            <div class="col-md-4 text-center">
+              <a href="https://www.tzitlacalli.edu.mx/">
+                <img class="logo-t" src="https://www.tzitlacalli.edu.mx/assets/img/logos/logo_Tzitlacalli_plumbago.png" alt="Tzitlacalli Ermita" width="120">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+          <b>Colegio Altamira</b>
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#educationAccordion">
+        <div class="accordion-body">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <p>primary to high school from 2012 - 2024</p>
+              <a href="https://www.altamira.edu.mx/" class="btn btn-outline-success btn-sm">Visitar sitio web</a>
+            </div>
+            <div class="col-md-4 text-center">
+              <a href="https://www.altamira.edu.mx/">
+                <img class="logo-image" src="https://edutory.mx/wp-content/uploads/2021/07/colegio-altamira-logo.png" alt="Colegio Altamira" width="120">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+          <b>Universidad Panamericana</b>
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#educationAccordion">
+        <div class="accordion-body">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <p>Currently studying Systems Engineering and Digital Animation</p>
+              <a href="https://www.up.edu.mx/campus-guadalajara" class="btn btn-outline-success btn-sm">Visitar sitio web</a>
+            </div>
+            <div class="col-md-4 text-center">
+              <a href="https://www.up.edu.mx/campus-guadalajara">
+                <img class="logo-image" src="https://filosofia.net/cdf/ugk/img/upm.png" alt="Universidad Panamericana" width="120">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <hr>
+
+   <!-- Skills Section -->
+<div class="skills-section my-4" id="skills">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h4><b>SKILLS</b></h4>
+      <ul class="list-unstyled">
+        <li>
+          Graphic Design ... <em>(60%)</em>
+          <button class="btn btn-sm btn-outline-light ms-2" data-bs-toggle="popover" data-bs-title="Graphic Design" data-bs-content="Experience with Photoshop, Illustrator, lightroom">info</button>
+        </li>
+        <li>
+          Programming ... <em>(80%)</em>
+          <button class="btn btn-sm btn-outline-light ms-2" data-bs-toggle="popover" data-bs-title="Programming" data-bs-content="Languages: Python, Java, C++">info</button>
+        </li>
+        <li>
+          Creativity ... <em>(90%)</em>
+          <button class="btn btn-sm btn-outline-light ms-2" data-bs-toggle="popover" data-bs-title="Creativity" data-bs-content="i like to have ideas xd">info</button>
+        </li>
+        <li>
+          Teamwork ... <em>(100%)</em>
+          <button class="btn btn-sm btn-outline-light ms-2" data-bs-toggle="popover" data-bs-title="Teamwork" data-bs-content="i like to work with my friends UWU">info</button>
+        </li>
+        <li>
+          Video Games ... <em>(99%)</em>
+          <button class="btn btn-sm btn-outline-light ms-2" data-bs-toggle="popover" data-bs-title="Video Games" data-bs-content="a lot of time playing geometry dash">info</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <hr>
+
+    <!-- Food Section -->
+    <div class="food-section my-4" id="food">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <h3 class="text-center">Favorite Food</h3>
+          <p class="text-center">From the following:</p>
+          <p>Thai, French, Japanese, Indian, Korean, Spanish, German, Italian, Australian, Scottish, Mexican, Turkish, Greek, Lebanese, Caribbean, Arab, English, Russian, Portuguese, Filipino</p>
+          <div class="row">
+            <div class="col-md-6">
+              <p>TOP 5 BEST FOOD</p>
+              <ol>
+                <li>Mexican</li>
+                <li>Japanese</li>
+                <li>Italian</li>
+                <li>Thai</li>
+                <li>French</li>
+              </ol>
+            </div>
+            <div class="col-md-6">
+              <p>TOP 3 WORST FOOD</p>
+              <ol>
+                <li>Chinese</li>
+                <li>American</li>
+                <li>British</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Hobbies Section -->
+    <div class="hobbies-section my-4" id="hobbies">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <h4><b>HOBBIES</b></h4>
+          <p>I enjoy playing video games, watching movies and hanging out with my friends.</p>
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <b>Movies</b>
+              <img src="https://lumiere-a.akamaihd.net/v1/images/eu_avr-4_hero_m_ecb05c85.jpeg?region=0,0,750,668" class="img-fluid" height="100px" width="100px" alt="avengers">
+              <ul class="list-unstyled">
+                <li>Inception</li>
+                <li>Avengers Endgame</li>
+                <li>Interstellar</li>
+              </ul>
+            </div>
+            <div class="col-md-4 text-center">
+              <b>Books</b>
+              <img src="https://m.media-amazon.com/images/I/81jOZtb3g7L._UF894,1000_QL80_.jpg" class="img-fluid" height="140px" width="100px" alt="greg book">
+              <ul class="list-unstyled">
+                <li>Diario de Greg</li>
+                <li>Harry Potter</li>
+                <li>El Principito</li>
+              </ul>
+            </div>
+            <div class="col-md-4 text-center">
+              <b>TV Shows</b>
+              <img src="https://m.media-amazon.com/images/I/51BLSIrpvgL._SY445_SX342_.jpg" class="img-fluid" height="140px" width="100px" alt="titan">
+              <ul class="list-unstyled">
+                <li>Attack on Titan</li>
+                <li>Wonder Egg Priority</li>
+                <li>Stranger Things</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Spots Section -->
+    <div class="spots-section my-4" id="spots">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h2 class="text-center">Favorite Spots</h2>
+          <p class="text-center">This are <a href="destination.html">my Favorite Spots</a></p>
+          <ul class="list-unstyled text-center">
+            <li><a href="destination.html#kyoto">Kyoto</a></li>
+            <li><a href="destination.html#seoul">Seoul</a></li>
+            <li><a href="destination.html#berlin">Berlin</a></li>
+            <li><a href="destination.html#cusco">Cusco</a></li>
+            <li><a href="destination.html#nyc">New York City</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Musicians Section -->
+    <div class="musicians-section my-4" id="musicians">
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <section>
+            <h2 class="text-center">Favorite Musicians </h2>
+            <div class="row">
+              <div class="col-md-4 text-center">
+                <img src="images/gerard.jpg" class="img-fluid" width="185" height="145" alt="Gerard Way"><br>
+                <strong>Gerard Way</strong><br>
+                April 9, 1977 (Alive)<br>
+                Musician, Singer, Comic Writer<br>
+                Frontman of My Chemical Romance
+              </div>
+              <div class="col-md-4 text-center">
+                <img src="images/andy.jpg" class="img-fluid" alt="Andy Biersack" width="150" height="150"><br>
+                <strong>Andy Biersack</strong><br>
+                December 26, 1990 (Alive)<br>
+                Musician, Singer<br>
+                Frontman of Black Veil Brides
+              </div>
+              <div class="col-md-4 text-center">
+                <img src="images/kellin.jpg" class="img-fluid" alt="Kellin Quinn" width="150" height="150"><br>
+                <strong>Kellin Quinn</strong><br>
+                April 24, 1986 (Alive)<br>
+                Musician, Singer<br>
+                lead vocalist of Sleeping with Sirens
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Meet the Artists Section -->
+<h1 class="meet-the-artists text-center">Meet the Artists</h1>
+<div class="row justify-content-center my-4">
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 shadow-sm border-0" >
+      <div class="card-img-top text-center py-3">
+        <img src="images/gerard.jpg" class="rounded-circle" alt="Gerard Way" style="width: 150px; height: 150px; object-fit: cover;">
+      </div>
+      <div class="card-body text-center">
+        <h3 class="card-title">Gerard Way</h3>
+        <p class="card-text text-muted">Musician, Singer & Comic Writer</p>
+        <p class="card-text">Frontman of My Chemical Romance</p>
+        <div class="card-footer bg-transparent border-0">
+          <p class="card-text"><small class="text-muted">mcr@gmail.com</small></p>
+          <button class="btn btn-outline-dark btn-sm">Contact</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 shadow-sm border-0">
+      <div class="card-img-top text-center py-3">
+        <img src="images/andy.jpg" class="rounded-circle" alt="Andy Biersack" style="width: 150px; height: 150px; object-fit: cover;">
+      </div>
+      <div class="card-body text-center">
+        <h3 class="card-title">Andy Biersack</h3>
+        <p class="card-text text-muted">Musician, Singer</p>
+        <p class="card-text">Frontman of Black Veil Brides</p>
+        <div class="card-footer bg-transparent border-0">
+          <p class="card-text"><small class="text-muted">bvb@gmail.com</small></p>
+          <button class="btn btn-outline-dark btn-sm">Contact</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 shadow-sm border-0">
+      <div class="card-img-top text-center py-3">
+        <img src="images/kellin.jpg" class="rounded-circle" alt="Kellin Quinn" style="width: 150px; height: 150px; object-fit: cover;">
+      </div>
+      <div class="card-body text-center">
+        <h3 class="card-title">Kellin Quinn</h3>
+        <p class="card-text text-muted">Musician, Singer</p>
+        <p class="card-text">Lead vocalist of Sleeping with Sirens</p>
+        <div class="card-footer bg-transparent border-0">
+          <p class="card-text"><small class="text-muted">sws@gmail.com</small></p>
+          <button class="btn btn-outline-dark btn-sm">Contact</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <hr>
+
+    <!-- Agenda Section -->
+    <div class="agenda-section my-4" id="agenda">
+      <div class="row justify-content-center">
+        <div class="col-md-100">
+          <section>
+            <h2 class="text-center"> ¿AGENDA??</h2>
+            <form class="row g-3">
+              <hr class="form-section">
+              <div class="col-md-6">
+                <label for="date" class="form-label">date</label>
+                <input type="date" class="form-control" id="date" name="date" required>
+              </div>
+              <div class="col-md-6">
+                <label for="time-start" class="form-label">start time</label>
+                <input type="time" class="form-control" id="time-start" name="time-start" required>
+              </div>
+              <hr class="form-section">
+              <div class="col-md-6">
+                <label for="time-end" class="form-label">end time</label>
+                <input type="time" class="form-control" id="time-end" name="time-end" required>
+              </div>
+              <div class="col-md-6">
+                <label for="activity" class="form-label">activity</label>
+                <input type="text" class="form-control" id="activity" name="activity" placeholder="Activity description" required>
+              </div>
+              <hr class="form-section">
+              <div class="col-md-6">
+                <label for="place" class="form-label">place</label>
+                <input type="text" class="form-control" id="place" name="place" placeholder="where the activity takes place">
+              </div>
+              <div class="col-md-6">
+                <label for="type" class="form-label">type</label>
+                <select class="form-select" id="type" name="type" required>
+                  <option value="">Select a type</option>
+                  <option value="school">School</option>
+                  <option value="personal">Personal</option>
+                  <option value="professional">Professional</option>
+                  <option value="family">Family</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <hr class="form-section">
+              <div class="col-12">
+                <label for="notes" class="form-label">Notes</label>
+                <textarea class="form-control" id="notes" name="notes" placeholder="Additional notes..."></textarea>
+              </div>
+              <hr class="form-section">
+              <div class="col-md-6">
+                <label for="flag" class="form-label">flag color
+                  <span class="flag-color" style="background-color: #ff0000;"></span>
+                </label>
+                <input type="color" class="form-control form-control-color" id="flag" name="flag" value="#ff0000">
+              </div>
+              <div class="col-md-6">
+                <div class="form-check mt-4">
+                  <input class="form-check-input" type="checkbox" id="free-busy" name="free-busy">
+                  <label class="form-check-label" for="free-busy">set as busy</label>
+                </div>
+              </div>
+              <hr class="form-section">
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-success me-2">Save Activity</button>
+                <button type="reset" class="btn btn-secondary">Clear Form</button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Mountain -->
+    <div class="mountain-container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <img src="images/mountain.png" class="mountain img-fluid" alt="Mountain">
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+  <button class="btn btn-primary" type="button" disabled>
+    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+    Loading Button...
+  </button>
+</div>
+
+
+
+<!-- Modal de Contact -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: rgb(140, 224, 175);">
+        <h5 class="modal-title text-white" id="contactModalLabel">Contact Me</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingName" placeholder="Your Name">
+            <label for="floatingName">Your Name</label>
+          </div>
+          
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" 
+                   data-bs-toggle="tooltip" data-bs-placement="right" 
+                   data-bs-title="dont forget the @">
+            <label for="floatingEmail">Email address</label>
+          </div>
+          
+          <div class="form-floating mb-3">
+            <textarea class="form-control" placeholder="Leave a message here" id="floatingMessage" style="height: 100px"></textarea>
+            <label for="floatingMessage">Message</label>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Send Message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+</script>
+
+
+</body>
+</html>
