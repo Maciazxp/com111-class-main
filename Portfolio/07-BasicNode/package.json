@@ -1,0 +1,28 @@
+{
+  "name": "07-basicnode",
+  "version": "1.0.0",
+  "description": "These exercises will guide us on how to create a simple Node script and how to execute it, as well as understanding how to get to use libraries inside of Node.",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maciazxp/com111-class-main.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Santiago Macias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maciazxp/com111-class-main/issues"
+  },
+  "homepage": "https://github.com/Maciazxp/com111-class-main#readme",
+  "dependencies": {
+    "install": "^0.13.0",
+    "star-wars-quotes": "^1.0.2",
+    "superheroes": "^4.0.0",
+    "supervillains": "^4.0.0"
+  }
+}
