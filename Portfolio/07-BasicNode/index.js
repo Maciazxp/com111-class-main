@@ -3,9 +3,6 @@ import { randomSuperhero } from 'superheroes';
 import {randomSupervillain} from 'supervillains';
 import sw from 'star-wars-quotes';
 
-
-
-
 var superHeroName = randomSuperhero();
 var superVillainName = randomSupervillain();
 var secret = readFileSync('./data/input.txt', 'utf-8');
